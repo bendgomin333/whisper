@@ -9,7 +9,7 @@ Or you can build image from Dockerfile
 > Builded image takes about 10GB
 
 ## How to run container?
-Run `sudo docker run --rm -v "/absolute/local/path/to/models/folder":/root/.cache/whisper -v "/absolute/local/path/to/output/folder":"/app/output" -it --gpus all -e model=tiny -e link="https://www.youtube.com/watch.........." bendgomin333/whisper:gpu`<br />
+Run `sudo docker run --rm -v /absolute/local/path/to/models/folder:/root/.cache/whisper -v /absolute/local/path/to/output/folder:/app/output -it --gpus all -e model=tiny -e link="https://www.youtube.com/watch.........." bendgomin333/whisper:gpu`<br />
 
 **required flags:**
 
