@@ -14,7 +14,7 @@ Run `sudo docker run --rm -v /absolute/local/path/to/models/folder:/root/.cache/
 **required flags:**
 
 `-v "/absolute/local/path/to/models/folder":/root/.cache/whisper`: bind local folder to image folder with cached models. This allows you to store models without downloading every time you create a container<br />
-`-v "/absolute/local/path/to/output/folder":"/app/output"`: bind local folder to image folder with output files<br />
+`-v "/absolute/local/path/to/output/folder":/app/output`: bind local folder to image folder with output files<br />
 `-e link="https://www.youtube.com/watch.........."`: link to yt video<br />
 `bendgomin333/whisper:gpu`: image name (tag could be `gpu` for CUDA device or `cpu` for CPU device)<br />
 `--gpus all`: Must be provided when using CUDA device. Allows you to use the GPU inside the image (`nvidia-container-toolkit` package must be installed on the host machine)<br />
