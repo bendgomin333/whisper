@@ -9,13 +9,13 @@ Or you can build image from Dockerfile
 > Builded image takes about 10GB
 
 ## Hot to run container?
-run `sudo docker run --rm -v "/absolute/local/path/to/models/folder":/root/.cache/whisper -v "/absolute/local/path/to/output/folder":"/app/output" -it --gpus all -e link="https://www.youtube.com/watch.........." bendgomin333/whisper:gpu`
-`--rm`: remove after recognizing
-`-v "/absolute/local/path/to/models/folder":/root/.cache/whisper`: bind local folder to image folder with cached models. This allows you to store models without downloading every time you create a container
-`-v "/absolute/local/path/to/output/folder":"/app/output"`: bind local folder to image folder with output files
-`-it`: interactive mode for better cli outputs
-`--gpus all`: Allows you to use the GPU inside the image (`nvidia-container-toolkit`) package must be installed on the host machine)
-`-e link="https://www.youtube.com/watch.........."`: link to yt video
+run `sudo docker run --rm -v "/absolute/local/path/to/models/folder":/root/.cache/whisper -v "/absolute/local/path/to/output/folder":"/app/output" -it --gpus all -e link="https://www.youtube.com/watch.........." bendgomin333/whisper:gpu`<br />
+`--rm`: remove after recognizing<br />
+`-v "/absolute/local/path/to/models/folder":/root/.cache/whisper`: bind local folder to image folder with cached models. This allows you to store models without downloading every time you create a container<br />
+`-v "/absolute/local/path/to/output/folder":"/app/output"`: bind local folder to image folder with output files<br />
+`-it`: interactive mode for better cli outputs<br />
+`--gpus all`: Allows you to use the GPU inside the image (`nvidia-container-toolkit` package must be installed on the host machine)<br />
+`-e link="https://www.youtube.com/watch.........."`: link to yt video<br />
 
 **optional:**
 
